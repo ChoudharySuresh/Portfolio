@@ -1,6 +1,9 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import trendifyToken from "@/assets/images/trendify-token.png";
+import nebulaNexus from "@/assets/images/nebula-nexus.png";
+import stacktically from "@/assets/images/stacktically.png";
+import topAiTool from "@/assets/images/topaitools.png";
+import steezy from "@/assets/images/steezy.png";
+import HMS from "@/assets/images/HMS.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -10,46 +13,82 @@ import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "steezy",
+    year: "2024",
+    title: "Dance classes",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Interactive online dance platform" },
+      { title: "Seamless, responsive design" },
+      { title: "User engagement through community" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    link: "https://www.steezy.co/",
+    image: steezy,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "TopAI.tools",
+    year: "2024",
+    title: "AI Tool Aggregator",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
+      { title: "Optimized user interface" },
+      { title: "Seamless search for AI tools" },
+      { title: "Top AI tools for diverse needs" },
+    ],
+    link: "https://topai.tools/",
+    image: topAiTool,
+  },
+  {
+    company: "Sharethumb",
+    year: "2024",
+    title: "Hospital Management System Website",
+    results: [
+      { title: "Enhanced user experience" },
+      { title: "Easy doctor and service search" },
+      { title: "Fast access to healthcare services." },
+    ],
+    link: "https://samarthpediatric.sharethumb.com/",
+    image: HMS,
+  },
+  {
+    company: "Trendify Tokens",
+    year: "2023",
+    title: "Blockchain-based Application",
+    results: [
+      { title: "Blockchain app for multi-token creation" },
+      { title: "Improved mobile support with Wagmi" },
+      { title: "Enhanced scalability and user accessibility" },
+    ],
+    link: "https://trendifytokens.io/",
+    image: trendifyToken,
+  },
+  {
+    company: "Nebula Nexus Innovations",
+    year: "2022",
+    title: "EdTech Website",
+    results: [
+      { title: "Responsive, SEO-friendly landing page" },
+      { title: "Achieved a 50% reduction in page load time" },
       { title: "Increased brand awareness by 15%" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    link: "https://www.nebula-nexus-innovations.in/",
+    image: nebulaNexus,
   },
   {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
+    company: "stacktically",
+    year: "2020",
+    title: "IT Solutions Website",
     results: [
-      { title: "Enhanced user experience by 40%" },
+      { title: "Enhanced user experience" },
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://www.stacktically.com/",
+    image: stacktically,
   },
 ];
 
 export const ProjectsSection = () => {
   return (
-    <section className="pb-16 lg:py-24">
+    <section className="pb-16 lg:py-24" id="projects">
       <div className="container">
         <SectionHeader
           eyebrow="Real-world Results"
@@ -88,7 +127,7 @@ export const ProjectsSection = () => {
                       </li>
                     ))}
                   </ul>
-                  <a href={project?.link}>
+                  <a href={project?.link} target="_blank">
                     <button className="bg-white text-gray-950 h-12 w-full md:w-auto md:px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
                       <span>Visit Live Site</span>
                       <ArrowUpRightIcon className="size-4" />
